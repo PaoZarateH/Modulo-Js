@@ -80,11 +80,23 @@ let nombre = prompt("Dime tu nombre");
 let pesoActual = prompt("Dime tu peso actual en kg");
 const GravedadTierra= 9.81; 
 const fuerzaGravitacional = 1.622;
+/*PESO JUPITER*/
+const fuerzaGravitacionalJupiter = 24.79;
+/**PESO MARTE */
+const fuerzaGravitacionalMarte = 3.711;
 
 nombre = String(nombre)
 pesoActual = Number(pesoActual)
 
 
-let resultado = pesoActual / GravedadTierra * fuerzaGravitacional;
+let resultadoLuna = pesoActual / GravedadTierra * fuerzaGravitacional;
 console.log(nombre)
-console.log ("Pesas " + resultado + " " +" kg en la luna:D")
+console.log ("Tu peso en la luna es de " + resultadoLuna + " " +" kg en la luna:D")
+
+let resultadoJupiter = pesoActual / GravedadTierra * fuerzaGravitacionalJupiter;
+console.log ("Tu peso en Jupiter es de " + resultadoJupiter + " " + "kg ")
+
+let resultadoMarte = pesoActual / GravedadTierra * fuerzaGravitacionalMarte;
+console.log ("Tu peso en Marte es de " + resultadoMarte + " " + "kg")
+
+
